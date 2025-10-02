@@ -32,7 +32,8 @@ namespace Ex3
 
             do
             {
-                Console.WriteLine($@"Opções
+                Console.WriteLine($@"
+                                Opções
                                 1. Mostrar menor nota
                                 2. Mostrar maior nota
                                 3. Pesquisar nota
@@ -70,17 +71,48 @@ namespace Ex3
 
                         bool encontrou = false;
 
+                        Console.Write($"Nota {pesquisar} encontrada na posição:");
+
                         for (int i = 0; i < notas.Length; i++)
                         {
+
                             if (pesquisar == notas[i])
                             {
-                                Console.WriteLine($"Nota {pesquisar} encontrada na posição {i + 1}");
+                                Console.Write(i + 1 + " , ");
                                 encontrou = true;
-                                break;
                             }
-                            if (!encontrou)
-                                Console.WriteLine($"Nota {pesquisar} não encontrada");
                         }
+                        if (!encontrou)
+                            Console.WriteLine($"Nota {pesquisar} não encontrada");
+                        break;
+
+                    case 4:
+                        double totalNotas = 0, media = 0;
+
+                        for (int i = 0; i < notas.Length; i++)
+                        {
+                            totalNotas += notas[i];
+                            media = totalNotas / notas.Length;
+                        }
+                        
+                        if (media > 60)
+                        {
+                            int acimaMedia = 0;
+                            for (int i = 0; i < notas.Length; i++)
+                            {
+                                if (notas[i] > media)
+                                    acimaMedia++;
+                            }
+                            Console.WriteLine($"Média das notas: {media} \nQuantidade de notas acima da média: {acimaMedia}");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Média das notas: {media} \nNenhuma nota está acima da média.");
+                        }
+                        break;
+
+                    default:
+                        Console.WriteLine("Opção Inválida!");
                         break;
                 }
             } while (opcao != 5);
