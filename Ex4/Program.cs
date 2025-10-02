@@ -21,7 +21,7 @@ namespace Ex4
             diferente de 0,1,2,3,4).
             Dica: use cada posição do vetor como um contador*/
 
-            int[] candidato = new int[5];
+            int[] candidato = new int[100];
             string[] nomes = { "Perna Longa", "Pluto", "Mickey", "Bob Esponja", "Cebolinha" };
      
             int nulos = 0;
@@ -63,7 +63,7 @@ namespace Ex4
             }
 
             Console.WriteLine($"Candidato mais votado: {maisVotado} com {candidato[maisVotado]} votos;");
-            Console.WriteLine($"Candidato menos votado: {nomes[menosVotado]} com {candidato[menosVotado]};");
+            Console.WriteLine($"Candidato menos votado: {nomes[menosVotado]} com {candidato[menosVotado]} votos;");
             Console.WriteLine($"Votos Nulos: {nulos};");
         }
     }
