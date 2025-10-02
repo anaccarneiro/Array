@@ -92,9 +92,10 @@ namespace Ex3
                         for (int i = 0; i < notas.Length; i++)
                         {
                             totalNotas += notas[i];
-                            media = totalNotas / notas.Length;
                         }
-                        
+
+                        media = totalNotas / notas.Length;
+
                         if (media > 60)
                         {
                             int acimaMedia = 0;
@@ -119,4 +120,3 @@ namespace Ex3
         }
     }
 }
-
