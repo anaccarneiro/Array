@@ -55,6 +55,13 @@ namespace Ex6
                             vetD[i] = vetA[i] - vetB[i];
                             break;
 
+                        case '*':
+                            vetD[i] = vetA[i] * vetB[i];
+                            break;
+
+                        case '/':
+                            vetD[i] = (double)vetA[i] / vetB[i];
+                            break;
                     }
                 }
             }
