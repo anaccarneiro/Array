@@ -46,8 +46,8 @@ namespace Ex7
                 }
             }
 
-            while (contadorY < 5) 
-            { 
+            while (contadorY < 5)
+            {
                 Console.WriteLine($"Informe o {contadorY + 1}º número do vetor Y:");
                 int numY = int.Parse(Console.ReadLine());
 
@@ -90,6 +90,32 @@ namespace Ex7
             }
 
             //União entre x e y: todos os elementos de x e de y, mas sem elementos repetidos.
+            Console.WriteLine("\nUnião");
+
+            bool encontrado = false;
+
+            for (int i = 0; i < X.Length; i++)
+            {
+                Console.Write(X[i] + " , ");
+            }
+
+            for (int j = 0; j < Y.Length; j++)
+            {
+                encontrado = false;
+
+                for (int i = 0; i < X.Length; i++)
+                {
+                    if (Y[j] == X[i])
+                    {
+                        encontrado = true;
+                        break;
+                    }
+                }
+                if (!encontrado)
+                {
+                    Console.Write(Y[j] + " , ");
+                }
+            }
         }
     }
 }
