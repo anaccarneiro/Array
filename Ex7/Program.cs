@@ -73,10 +73,29 @@ namespace Ex7
             }
             //Soma
             //Produto
-            //Diferença
+            //Diferença entre x e y: todos os elementos de x que não existam em y
+            Console.WriteLine("Diferença");
+
+            for (int i = 0; i < X.Length; i++)
+            {
+                bool encontradoDiferenca = false;
+
+                for (int j = 0; j < Y.Length; j++)
+                {
+                    if (X[i] == Y[j])
+                    {
+                        encontradoDiferenca = true;
+                        break;
+                    }
+                }
+                if (!encontradoDiferenca)
+                {
+                    Console.Write(X[i] + " , ");
+                }
+            }
 
             //Interseção entre x e y: apenas os elementos que aparecem nos dois vetores.
-            Console.WriteLine("Interseção");
+            Console.WriteLine("\n\nInterseção");
 
             for (int i = 0; i < X.Length; i++)
             {
@@ -90,7 +109,7 @@ namespace Ex7
             }
 
             //União entre x e y: todos os elementos de x e de y, mas sem elementos repetidos.
-            Console.WriteLine("\nUnião");
+            Console.WriteLine("\n\nUnião");
 
             bool encontrado = false;
 
