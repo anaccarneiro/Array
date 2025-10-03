@@ -17,10 +17,10 @@ namespace Ex6
             VetC / + + * / - - * +
             VetD 5 6 - 5 8 4 - 1 - 2 16 9 */
 
-            int[] vetA = new int[3];
-            int[] vetB = new int[3];
-            char[] vetC = new char[3];
-            double[] vetD = new double[3];
+            int[] vetA = new int[10];
+            int[] vetB = new int[10];
+            char[] vetC = new char[10];
+            double[] vetD = new double[10];
 
             for (int i = 0; i < vetA.Length; i++)
             {
@@ -55,13 +55,6 @@ namespace Ex6
                             vetD[i] = vetA[i] - vetB[i];
                             break;
 
-                        case '*':
-                            vetD[i] = vetA[i] * vetB[i];
-                            break;
-
-                        case '/':
-                            vetD[i] = (double)vetA[i] / vetB[i];
-                            break;
                     }
                 }
             }
