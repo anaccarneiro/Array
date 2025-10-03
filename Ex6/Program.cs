@@ -6,16 +6,6 @@ namespace Ex6
     {
         static void Main(string[] args)
         {
-            /*06.Crie um programa que, dados dois vetores de 10 posições cada, efetue as operações aritméticas básicas
-            (+, -, *, /), indicadas por um terceiro vetor cujos dados também são fornecidos pelo usuário, gerando e
-            imprimindo um quarto vetor.
-
-            Exemplo:
-
-            VetA 10 2 -6 9 12 3 5 8 -1
-            VetB 2 4 1 2 3 4 7 2 10
-            VetC / + + * / - - * +
-            VetD 5 6 - 5 8 4 - 1 - 2 16 9 */
 
             int[] vetA = new int[10];
             int[] vetB = new int[10];
