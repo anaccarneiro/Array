@@ -20,12 +20,12 @@ namespace Ex4
             diferente de 0,1,2,3,4).
             Dica: use cada posição do vetor como um contador*/
 
-            int[] candidato = new int[100];
+            int[] candidato = new int[5];
             string[] nomes = { "Perna Longa", "Pluto", "Mickey", "Bob Esponja", "Cebolinha" };
      
             int nulos = 0;
 
-            for (int rep = 1; rep <= 7; rep++)
+            for (int rep = 1; rep <= 100; rep++)
             {
                 Console.WriteLine(@"Informe o número do candidato desejado:
                                     0. Perna Longa
