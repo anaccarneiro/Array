@@ -71,8 +71,17 @@ namespace Ex7
                     contadorY++;
                 }
             }
-            //Soma
-            //Produto
+            //Soma entre x e y: soma de cada elemento de x com o elemento da mesma posição em y.
+            Console.WriteLine("Soma");
+
+            for (int i = 0; i < X.Length; i++)
+            {
+                Console.Write(X[i] + Y[i] + " , ");
+            }
+
+            //Produto entre x e y: multiplicação de cada elemento de x com o elemento da mesma posição em y.
+            Console.WriteLine("Produto");
+
             //Diferença entre x e y: todos os elementos de x que não existam em y
             Console.WriteLine("Diferença");
 
