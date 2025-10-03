@@ -71,6 +71,25 @@ namespace Ex7
                     contadorY++;
                 }
             }
+            //Soma
+            //Produto
+            //Diferença
+
+            //Interseção entre x e y: apenas os elementos que aparecem nos dois vetores.
+            Console.WriteLine("Interseção");
+
+            for (int i = 0; i < X.Length; i++)
+            {
+                for (int j = 0; j < Y.Length; j++)
+                {
+                    if (X[i] == Y[j])
+                    {
+                        Console.Write(X[i] + " , ");
+                    }
+                }
+            }
+
+            //União entre x e y: todos os elementos de x e de y, mas sem elementos repetidos.
         }
     }
 }
