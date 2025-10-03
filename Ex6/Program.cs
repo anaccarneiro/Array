@@ -32,27 +32,23 @@ namespace Ex6
 
             for (int i = 0; i < vetA.Length; i++)
             {
-                for (int j = 0; j < vetB.Length; j++)
+                switch (vetC[i])
                 {
+                    case '+':
+                        vetD[i] = vetA[i] + vetB[i];
+                        break;
 
-                    switch (vetC[i])
-                    {
-                        case '+':
-                            vetD[i] = vetA[i] + vetB[i];
-                            break;
+                    case '-':
+                        vetD[i] = vetA[i] - vetB[i];
+                        break;
 
-                        case '-':
-                            vetD[i] = vetA[i] - vetB[i];
-                            break;
+                    case '*':
+                        vetD[i] = vetA[i] * vetB[i];
+                        break;
 
-                        case '*':
-                            vetD[i] = vetA[i] * vetB[i];
-                            break;
-
-                        case '/':
-                            vetD[i] = (double)vetA[i] / vetB[i];
-                            break;
-                    }
+                    case '/':
+                        vetD[i] = (double)vetA[i] / vetB[i];
+                        break;
                 }
             }
 
