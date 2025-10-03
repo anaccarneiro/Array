@@ -6,14 +6,6 @@ namespace Ex7
     {
         static void Main(string[] args)
         {
-            /*07. Leia dois vetores de inteiros x e y, cada um com 5 elementos (assuma que para um mesmo vetor, o
-            usuário não informará elementos repetidos). Calcule e mostre o resultado das seguintes operações:
-            ● Soma entre x e y: soma de cada elemento de x com o elemento da mesma posição em y.
-            ● Produto entre x e y: multiplicação de cada elemento de x com o elemento da mesma posição em y.
-            ● Diferença entre x e y: todos os elementos de x que não existam em y.
-            ● Interseção entre x e y: apenas os elementos que aparecem nos dois vetores.
-            ● União entre x e y: todos os elementos de x e de y, mas sem elementos repetidos.*/
-
             int contadorX = 0, contadorY = 0;
 
 
@@ -72,7 +64,7 @@ namespace Ex7
                 }
             }
             //Soma entre x e y: soma de cada elemento de x com o elemento da mesma posição em y.
-            Console.WriteLine("Soma");
+            Console.WriteLine("\n\nSoma");
 
             for (int i = 0; i < X.Length; i++)
             {
@@ -80,10 +72,15 @@ namespace Ex7
             }
 
             //Produto entre x e y: multiplicação de cada elemento de x com o elemento da mesma posição em y.
-            Console.WriteLine("Produto");
+            Console.WriteLine("\n\nProduto");
+
+            for (int i = 0; i < X.Length; i++)
+            {
+                Console.Write(X[i] * Y[i] + " , ");
+            }
 
             //Diferença entre x e y: todos os elementos de x que não existam em y
-            Console.WriteLine("Diferença");
+            Console.WriteLine("\n\nDiferença");
 
             for (int i = 0; i < X.Length; i++)
             {
